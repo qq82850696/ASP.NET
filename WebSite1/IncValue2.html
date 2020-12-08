@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Div版本的自增</title>
+</head>
+<body>
+    <form action="IncValue2.ashx">
+        <input type="hidden" name="ispostback" value="yes" />
+        <input type="hidden" name="num1" value="@value" />
+        <div>@value</div>
+        <input type="submit" value="自增" />
+    </form>
+</body>
+</html>

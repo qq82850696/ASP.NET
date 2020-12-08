@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form id="form1" action="IncValue1.ashx">
+        <input type="hidden" name="ispostback" value="true" />
+        <input type="text" name="number" value="@value" />
+        <input type="button" value="自增" onclick="document.getElementById('form1').submit()"/>
+       <!-- <input type="submit" value="自增" />-->
+    </form>
+</body>
+</html>

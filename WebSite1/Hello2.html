@@ -5,8 +5,8 @@
     <title></title>
 </head>
 <body>
-    <form action="Hello2.ashx">
-        <input type="hidden" name="ispostback" value="true">
+    <form action="Hello2.ashx" method="post">
+        <input type="hidden" name="ispostback" class="night" value="true">
         姓名: <input type="text" id="UserName" name="UserName" value="@value" /><input type="submit" value="提交">
         @msg
     </form>

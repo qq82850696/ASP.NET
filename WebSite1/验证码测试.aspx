@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="验证码测试.aspx.cs" Inherits="验证码测试" %>
 
 <!DOCTYPE html>
 
@@ -9,14 +9,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
+        <div>
+            <img src="YZM.ashx" onclick="this.src='YZM.ashx?aaa='+new Date()" />
+        </div>
         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-        <br />
-        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-    
-    </div>
-        <asp:Button ID="Button1" runat="server" Text="登录" Height="48px" Width="91px" />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
     </form>
 </body>
 </html>

@@ -13,6 +13,12 @@
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         </div>
+        <p>
+            <asp:Button ID="btnReadSession" runat="server" Text="读取Session" OnClick="btnReadSession_Click" />
+        </p>
+         <p>
+            <asp:Button ID="btnWriteSession" runat="server" Text="设置Session" OnClick="btnWriteSession_Click" />
+        </p>
     </form>
 </body>
 </html>
